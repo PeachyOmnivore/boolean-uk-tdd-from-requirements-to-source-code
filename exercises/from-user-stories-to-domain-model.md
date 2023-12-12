@@ -37,12 +37,37 @@ Translate these two user stories into a functional representation:
 ```
 As a supermarket shopper,
 So that I can pay for items at checkout,
-I'd like to be able to know the total cost of items in my basket.
+I'd like to be able to know the total cost of the items in my basket.
 
-As an organised individual,
+As an organized individual,
 So that I can evaluate my shopping habits,
 I'd like to see a receipt that includes line items (quantity, name, cost) and the total cost.
 ```
+## Story 1 (Nouns, Verbs)
+- Nouns: shopper, supermarket, items, checkout, total, cost, basket
+- Verbs: pay, know
+
+## Table 1
+| Methods | Inputs | Data | Scenario | Outputs
+| ------ | ------ | ------ | ----- | ----- |
+| payment(item, cost) | item(@string) cost(@number) | (string and number) | If item has cost | true |
+| ------ | ------ | ------ | item does not exist or has no cost | false |
+| ------ | ------ | ------ | ----- | ----- |
+| itemList(items, costs) | items(@string[]) cost(@number) | (strings, numbers) | list of Items exists | true |
+| ------ | ------ | ------ | No Items in list | false |
+| ------ | ------ | ------ | ----- | ----- |
+| ------ | ------ | ------ | ----- | ----- |
+
+## Story 1 (Nouns, Verbs)
+
+
+##Table 2
+| Methods | Inputs | Data | Scenario | Outputs
+| ------ | ------ | ------ | ----- | ----- |
+| ------ | ------ | ------ | ----- | ----- |
+
+
+
 
 Add the following to the file `domain-model.md`:
 - [ ] Write down all the **nouns** and then all the **verbs** in the User Stories
