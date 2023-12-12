@@ -60,11 +60,9 @@ I'd like to see a receipt that includes line items (quantity, name, cost) and th
 
 ##Table 2
 | Methods | Inputs | Data | Scenario | Outputs
+| ------ | ------ | ------ | ----- | ----- |
 | generateReciept | itemsInBasket(items[]) | Item: - name(string), - price(Number), - quantity(Number)| There are items in the basket | A breakdown of each item in the basket, including the name, quantity and cost. At the bottom, it should show the total cost. |
 | ------ | ------ | ------ | No items in the basket | "No items in your basket" |
-| ------ | ------ | ------ | ----- | ----- |
-| ------ | ------ | ------ | ----- | ----- |
-| ------ | ------ | ------ | ----- | ----- |
 
 
 
