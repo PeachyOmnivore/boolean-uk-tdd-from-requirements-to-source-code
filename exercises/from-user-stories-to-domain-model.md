@@ -43,7 +43,7 @@ As an organized individual,
 So that I can evaluate my shopping habits,
 I'd like to see a receipt that includes line items (quantity, name, cost) and the total cost.
 ```
-## Story 1 (Nouns, Verbs)
+## User Story 1 (Nouns, Verbs)
 - Nouns: shopper, supermarket, items, checkout, total, cost, basket
 - Verbs: pay, know
 
@@ -54,11 +54,11 @@ I'd like to see a receipt that includes line items (quantity, name, cost) and th
 | ------ | ------ | ------ | No items in basket | "there are no items in your basket" |
 | ------ | ------ | ------ | ----- | ----- |
 
-## Story 1 (Nouns, Verbs)
+## User Story 2 (Nouns, Verbs)
 - Nouns: individual, receipt, items, quantity, name, cost
 - Verbs: evaluate, see
 
-##Table 2
+## Table 2
 | Methods | Inputs | Data | Scenario | Outputs
 | ------ | ------ | ------ | ----- | ----- |
 | generateReciept | itemsInBasket(items[]) | Item: - name(string), - price(Number), - quantity(Number)| There are items in the basket | A breakdown of each item in the basket, including the name, quantity and cost. At the bottom, it should show the total cost. |
