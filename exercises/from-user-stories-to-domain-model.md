@@ -50,19 +50,19 @@ I'd like to see a receipt that includes line items (quantity, name, cost) and th
 ## Table 1
 | Methods | Inputs | Data | Scenario | Outputs
 | ------ | ------ | ------ | ----- | ----- |
-| payment(item, cost) | item(@string) cost(@number) | (string and number) | If item has cost | true |
-| ------ | ------ | ------ | item does not exist or has no cost | false |
-| ------ | ------ | ------ | ----- | ----- |
-| itemList(items, costs) | items(@string[]) cost(@number) | (strings, numbers) | list of Items exists | true |
-| ------ | ------ | ------ | No Items in list | false |
-| ------ | ------ | ------ | ----- | ----- |
+| calculateTotalCost | itemsInBasket(Items[]) | Item: - name(string), - price(Number), - quantity(Number) | There are items in the basket | show items in the basket and there cost |
+| ------ | ------ | ------ | No items in basket | "there are no items in your basket" |
 | ------ | ------ | ------ | ----- | ----- |
 
 ## Story 1 (Nouns, Verbs)
-
+- Nouns: individual, receipt, items, quantity, name, cost
+- Verbs: evaluate, see
 
 ##Table 2
 | Methods | Inputs | Data | Scenario | Outputs
+| generateReciept | itemsInBasket(items[]) | Item: - name(string), - price(Number), - quantity(Number)| There are items in the basket | A breakdown of each item in the basket, including the name, quantity and cost. At the bottom, it should show the total cost. |
+| ------ | ------ | ------ | No items in the basket | "No items in your basket" |
+| ------ | ------ | ------ | ----- | ----- |
 | ------ | ------ | ------ | ----- | ----- |
 | ------ | ------ | ------ | ----- | ----- |
 
